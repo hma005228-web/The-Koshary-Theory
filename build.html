@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build Your Bowl | The Koshary Theory</title>
+<meta name="description" content="Design your own koshary bowl. Pick the size, base, sauce and extras and watch it come to life.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html" aria-label="The Koshary Theory — Home"><img src="images/logo.svg" alt=""><span>The Koshary <em>Theory</em></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="build.html" class="active" aria-current="page">Build Your Bowl</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <a class="icon-btn" href="order.html" aria-label="Open cart" >🛒<span class="badge cart-count hidden">0</span></a>
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-head"><div class="wrap"><span class="eyebrow">The Koshary Theory</span><h1>Build Your Bowl</h1><p class="crumbs"><a href="index.html">Home</a> / Build Your Bowl</p><p class="muted" style="max-width:560px;margin:12px auto 0">Mix and match. The bowl and the price update live as you choose.</p></div></section>
+<section class="section"><div class="wrap builder">
+  <aside class="card preview">
+    <div class="dish-art" id="bPreview" aria-live="polite"></div>
+    <h3>Your Custom Bowl</h3>
+    <ul class="mini-list" id="bList"></ul>
+    <div class="muted">Total</div><div class="total" id="bTotal">EGP 0</div>
+    <button class="btn btn-primary btn-block" id="bAdd" type="button">Add to Cart 🛒</button>
+    <a class="btn btn-ghost btn-block" href="order.html" style="margin-top:10px">Go to checkout</a>
+  </aside>
+  <form id="builderForm" onsubmit="return false">
+    <div class="card opt-group"><h3>1. Choose a size</h3><p>Pick the portion that fits your hunger.</p>
+      <div class="chips"><div class="chip-opt"><input type="radio" name="size" id="size-S" value="S" data-label="Small" data-price="35"><label for="size-S">Small <small>35</small></label></div><div class="chip-opt"><input type="radio" name="size" id="size-M" value="M" data-label="Medium" data-price="55" checked><label for="size-M">Medium <small>55</small></label></div><div class="chip-opt"><input type="radio" name="size" id="size-L" value="L" data-label="Large" data-price="75"><label for="size-L">Large <small>75</small></label></div></div></div>
+    <div class="card opt-group"><h3>2. The base</h3><p>Included in the price. Uncheck anything you don't want.</p>
+      <div class="chips"><div class="chip-opt"><input type="checkbox" name="base" id="base-rice" value="rice" data-label="Rice" data-price="0" checked><label for="base-rice">Rice</label></div><div class="chip-opt"><input type="checkbox" name="base" id="base-pasta" value="pasta" data-label="Macaroni" data-price="0" checked><label for="base-pasta">Macaroni</label></div><div class="chip-opt"><input type="checkbox" name="base" id="base-lentils" value="lentils" data-label="Lentils" data-price="0" checked><label for="base-lentils">Lentils</label></div><div class="chip-opt"><input type="checkbox" name="base" id="base-chick" value="chick" data-label="Chickpeas" data-price="0" checked><label for="base-chick">Chickpeas</label></div><div class="chip-opt"><input type="checkbox" name="base" id="base-onions" value="onions" data-label="Crispy onions" data-price="0" checked><label for="base-onions">Crispy onions</label></div></div></div>
+    <div class="card opt-group"><h3>3. The sauce</h3><p>Our signature tomato sauce, your heat level.</p>
+      <div class="chips"><div class="chip-opt"><input type="radio" name="sauce" id="sauce-tomato" value="tomato" data-label="Classic tomato" data-price="0" checked><label for="sauce-tomato">Classic tomato</label></div><div class="chip-opt"><input type="radio" name="sauce" id="sauce-spicy" value="spicy" data-label="Spicy tomato" data-price="0"><label for="sauce-spicy">Spicy tomato</label></div><div class="chip-opt"><input type="radio" name="sauce" id="sauce-none" value="none" data-label="No sauce" data-price="0"><label for="sauce-none">No sauce</label></div></div></div>
+    <div class="card opt-group"><h3>4. Extras</h3><p>Take it to the next level.</p>
+      <div class="chips"><div class="chip-opt"><input type="checkbox" name="extra" id="extra-xonions" value="xonions" data-label="Extra onions" data-price="10"><label for="extra-xonions">Extra onions <small>+10</small></label></div><div class="chip-opt"><input type="checkbox" name="extra" id="extra-xchick" value="xchick" data-label="Extra chickpeas" data-price="8"><label for="extra-xchick">Extra chickpeas <small>+8</small></label></div><div class="chip-opt"><input type="checkbox" name="extra" id="extra-xlentils" value="xlentils" data-label="Extra lentils" data-price="8"><label for="extra-xlentils">Extra lentils <small>+8</small></label></div><div class="chip-opt"><input type="checkbox" name="extra" id="extra-dakka" value="dakka" data-label="Garlic dakka" data-price="5"><label for="extra-dakka">Garlic dakka <small>+5</small></label></div><div class="chip-opt"><input type="checkbox" name="extra" id="extra-shatta" value="shatta" data-label="Fire shatta" data-price="5"><label for="extra-shatta">Fire shatta <small>+5</small></label></div></div></div>
+  </form>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="logo" href="index.html"><img src="images/logo.svg" alt=""><span>The Koshary <em>Theory</em></span></a>
+        <p>Egypt's favorite comfort food, engineered to perfection. One bowl, endless layers.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="build.html">Build Your Bowl</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="order.html">Order / Cart</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>12 Example Street, Your City</li><li><a href="tel:+201000000000">+20 100 000 0000</a></li><li>Daily 11:00 AM – 1:00 AM</li></ul></div>
+      <div><h4>Join the Theory</h4><p>Get offers and new bowl drops.</p>
+        <form class="news" id="newsForm" novalidate><input type="email" placeholder="you@email.com" aria-label="Email"><button class="btn btn-gold btn-sm" type="submit">Join</button></form></div>
+    </div>
+    <div class="foot-bottom">© 2026 The Koshary Theory. All rights reserved.</div>
+  </div>
+</footer>
+<button class="backtop" id="backTop" aria-label="Back to top">↑</button>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>

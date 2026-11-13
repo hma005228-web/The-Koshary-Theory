@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Authentic Egyptian Koshary | The Koshary Theory</title>
+<meta name="description" content="The Koshary Theory — Egypt's favorite comfort food, built your way. Order online or build your own bowl.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html" aria-label="The Koshary Theory — Home"><img src="images/logo.svg" alt=""><span>The Koshary <em>Theory</em></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="build.html">Build Your Bowl</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+      <a class="icon-btn" href="order.html" aria-label="Open cart" >🛒<span class="badge cart-count hidden">0</span></a>
+      <a class="btn btn-primary btn-sm nav-cta" href="order.html">Order Now</a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">Est. for koshary lovers</span>
+      <h1>Every great bowl starts with a <em>theory</em>.</h1>
+      <p>Rice, pasta, lentils, chickpeas, crispy onions and our secret tomato sauce, layered with obsessive precision. Order a classic or build your own.</p>
+      <div class="hero-btns"><a class="btn btn-primary" href="menu.html">Explore the Menu</a><a class="btn btn-ghost" href="build.html">Build Your Bowl</a></div>
+      <div class="hero-stats">
+        <div><b>4.9★</b><small>Average rating</small></div>
+        <div><b>11</b><small>Toppings &amp; sauces</small></div>
+        <div><b>20 min</b><small>Avg. delivery</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img class="plate" src="images/hero-bowl.svg" alt="A steaming bowl of koshary with crispy onions" width="520" height="476">
+      <span class="chip c1">🧅 Extra crispy</span><span class="chip c2">🌶️ Fresh shatta</span><span class="chip c3">🌱 100% vegan</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+  <span>Rice</span><span>Macaroni</span><span>Lentils</span><span>Chickpeas</span><span>Crispy Onions</span><span>Tomato Sauce</span><span>Garlic Dakka</span><span>Shatta</span><span>Rice</span><span>Macaroni</span><span>Lentils</span><span>Chickpeas</span><span>Crispy Onions</span><span>Tomato Sauce</span><span>Garlic Dakka</span><span>Shatta</span>
+</div></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Fan favorites</span><h2>Our Signature Bowls</h2><p>Tried, tested and loved. Add any of them to your cart in one tap.</p></div>
+    <div class="grid grid-4">
+      <article class="card reveal" data-item data-id="classic" data-cat="koshary" data-name="Classic Koshary" data-price="35" data-img="images/koshary-classic.svg">
+        <div class="dish-art pos-rel"><span class="tag">Best seller</span><img src="images/koshary-classic.svg" alt="Classic Koshary" loading="lazy" width="240" height="220"></div>
+        <div class="dish-body"><h3>Classic Koshary</h3><p>Rice, macaroni, lentils, chickpeas, tomato sauce and crispy onions. The original.</p>
+          <div class="dish-foot"><div><select class="size-select" aria-label="Size"><option value="35" data-label="Small">Small</option><option value="55" data-label="Medium">Medium</option><option value="75" data-label="Large">Large</option></select> <span class="price">EGP 35</span></div>
+          <button class="btn btn-primary btn-sm" data-add>Add +</button></div></div>
+      </article>
+      <article class="card reveal d1" data-item data-id="special" data-cat="koshary" data-name="The Theory Special" data-price="95" data-img="images/koshary-special.svg">
+        <div class="dish-art pos-rel"><span class="tag">Chef's pick</span><img src="images/koshary-special.svg" alt="The Theory Special" loading="lazy" width="240" height="220"></div>
+        <div class="dish-body"><h3>The Theory Special</h3><p>Double chickpeas, extra crispy onions and garlic dakka on a rich tomato base.</p>
+          <div class="dish-foot"><div><span class="price">EGP 95</span></div>
+          <button class="btn btn-primary btn-sm" data-add>Add +</button></div></div>
+      </article>
+      <article class="card reveal d2" data-item data-id="spicy" data-cat="koshary" data-name="Spicy Inferno" data-price="65" data-img="images/koshary-spicy.svg">
+        <div class="dish-art pos-rel"><span class="tag">Hot</span><img src="images/koshary-spicy.svg" alt="Spicy Inferno" loading="lazy" width="240" height="220"></div>
+        <div class="dish-body"><h3>Spicy Inferno</h3><p>Fiery tomato sauce with fresh shatta. Not for the faint-hearted.</p>
+          <div class="dish-foot"><div><select class="size-select" aria-label="Size"><option value="65" data-label="Medium">Medium</option><option value="85" data-label="Large">Large</option></select> <span class="price">EGP 65</span></div>
+          <button class="btn btn-primary btn-sm" data-add>Add +</button></div></div>
+      </article>
+      <article class="card reveal d3" data-item data-id="omali" data-cat="desserts" data-name="Om Ali" data-price="45" data-img="images/dessert-om-ali.svg">
+        <div class="dish-art pos-rel"><span class="tag">Fan favorite</span><img src="images/dessert-om-ali.svg" alt="Om Ali" loading="lazy" width="240" height="220"></div>
+        <div class="dish-body"><h3>Om Ali</h3><p>Warm pastry, milk, nuts and cream, baked golden.</p>
+          <div class="dish-foot"><div><span class="price">EGP 45</span></div>
+          <button class="btn btn-primary btn-sm" data-add>Add +</button></div></div>
+      </article>
+    </div>
+    <p style="text-align:center;margin-top:40px" class="reveal"><a class="btn btn-ghost" href="menu.html">See the full menu →</a></p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">The method</span><h2>How the Theory Works</h2><p>Three simple steps to your perfect bowl.</p></div>
+    <div class="grid grid-3 steps">
+      <div class="card step reveal"><div class="ico">🍚</div><h3>Pick your base</h3><p>Rice, macaroni, lentils and chickpeas. Keep them all or drop what you don't love.</p></div>
+      <div class="card step reveal d1"><div class="ico">🍅</div><h3>Choose your sauce</h3><p>Classic tomato, spicy tomato, or go sauce-free. Add garlic dakka or shatta on top.</p></div>
+      <div class="card step reveal d2"><div class="ico">🧅</div><h3>Crown with crunch</h3><p>Crispy fried onions make it koshary. Ask for extra, we won't judge.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:44px" class="reveal"><a class="btn btn-primary" href="build.html">Try the Bowl Builder</a></p>
+  </div>
+</section>
+
+<section class="counters">
+  <div class="wrap grid">
+    <div class="reveal"><b data-count="250000" data-suffix="+">0</b><span>Bowls served</span></div>
+    <div class="reveal d1"><b data-count="48000" data-suffix="+">0</b><span>Happy customers</span></div>
+    <div class="reveal d2"><b data-count="11">0</b><span>Toppings &amp; sauces</span></div>
+    <div class="reveal d3"><b data-count="3">0</b><span>Branches</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Kind words</span><h2>What Our Guests Say</h2></div>
+    <div class="slider reveal">
+      <div class="slides"><div class="slide-track" id="slideTrack">
+        <div class="slide"><div class="stars">★★★★★</div><p>The crispiest onions I've ever had on koshary. The sauce has just the right kick.</p><b>Sara M.</b></div>
+        <div class="slide"><div class="stars">★★★★★</div><p>Building my own bowl is genius. Extra lentils and shatta, every single time.</p><b>Omar K.</b></div>
+        <div class="slide"><div class="stars">★★★★★</div><p>Fast delivery and the bowl arrived hot. The Om Ali for dessert is a must.</p><b>Nour A.</b></div>
+      </div></div>
+      <div class="slider-ctrl"><button class="icon-btn" id="prev" aria-label="Previous">‹</button><div class="dots" id="dots"></div><button class="icon-btn" id="next" aria-label="Next">›</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap"><div class="cta reveal"><h2>Hungry yet?</h2><p>Order now and get 10% off your first order with code <b>KOSHARY10</b>.</p><a class="btn btn-gold" href="order.html">Order Now</a></div></div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="logo" href="index.html"><img src="images/logo.svg" alt=""><span>The Koshary <em>Theory</em></span></a>
+        <p>Egypt's favorite comfort food, engineered to perfection. One bowl, endless layers.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="build.html">Build Your Bowl</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="order.html">Order / Cart</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>12 Example Street, Your City</li><li><a href="tel:+201000000000">+20 100 000 0000</a></li><li>Daily 11:00 AM – 1:00 AM</li></ul></div>
+      <div><h4>Join the Theory</h4><p>Get offers and new bowl drops.</p>
+        <form class="news" id="newsForm" novalidate><input type="email" placeholder="you@email.com" aria-label="Email"><button class="btn btn-gold btn-sm" type="submit">Join</button></form></div>
+    </div>
+    <div class="foot-bottom">© 2026 The Koshary Theory. All rights reserved.</div>
+  </div>
+</footer>
+<button class="backtop" id="backTop" aria-label="Back to top">↑</button>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
